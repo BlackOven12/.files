@@ -44,9 +44,7 @@ return {
 			lspconfig.html.setup({ capabilities = capabilities })
 			lspconfig.ts_ls.setup({ capabilities = capabilities })
 			lspconfig.vimls.setup({ capabilities = capabilities })
-			lspconfig.serve_d.setup({
-				capabilities = capabilities,
-			})
+			lspconfig.serve_d.setup({ capabilities = capabilities })
 			-- keybindings
 			vim.keymap.set("n", "<leader>k", vim.lsp.buf.hover, { desc = "Lsp Hover" })
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Lsp Go To Definition" })
